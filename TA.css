@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+    scrollbar-width:none;
+}
+
+/* Nav */
+.navbar {
+    font-family: viga;
+}
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+ 
+}
+.custom-navbar{
+    transition: top 1s ease-out;
+    top: -80px;
+    width: 100%;
+    background-color: transparent; /* Tambahkan ini */
+    
+}
+.custom-navbar.scrolled {
+    top: 0;
+    background-color: #7E5545;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ### */
+
+/* jumbotron */
+.jumbotron {
+    background-image:url(img/bali1.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    color: rgb(255, 255, 255);
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: viga;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+/* ######## */
+
+/* panel */
+
+.panel{
+   box-shadow: 0 3px 20px rgba(0, 0, 0,0.5);
+   border-radius: 12px;
+   background-color: white;
+   margin-top: -200px;
+   padding: 30px;
+}
+
+.panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.panel h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.panel p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+/* ##### */
+
+/* Penjelasan */
+
+.penjelasan {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.detail{
+    margin-top: 20px;
+}
+
+.detail h3 {
+    font-family: viga;
+    text-transform: uppercase;
+}
+
+.penjelasan p {
+    margin: 3px 0;
+}
+
+.detail img{
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+.detail h5{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.penjelasan .kaption p,h5  {
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 1px 1px  white;
+    font-family: viga;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* panel mobil */
+.mobil{
+    box-shadow: 0 3px 20px rgba(0, 0, 0,0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 100px;
+    padding: 30px;
+ }
+
+ .mobil img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    /* margin-bottom: 20px; */
+}
+
+.mobil p,h3{
+    font-family: viga;
+}
+
+.wisata-bali img {
+    width: 600px;
+    height: 300px;
+    margin: 20px 0;
+}
+
+.wisata-bali .deskrip{
+    margin-top: 18px;
+    font-family: viga;
+}
+
+.wisata-bali{
+    margin-top: 90px;
+}
+
+/* -- */
+
+/* ########## */
+
+
+@media (min-width: 992px) {
+
+    .nav-link,.navbar-brand{
+        color: rgb(255, 255, 255) !important; 
+        text-shadow: 1px 1px 1px rgba(0, 0, 0,0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content:'';
+        display: block;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        width: 50%;
+        margin:auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+
+    .panel{
+        margin-top: -100px;
+    }
+
+    .penjelasan{
+        text-align: left;
+    }
+
+    
+}
